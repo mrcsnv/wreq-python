@@ -72,3 +72,4 @@ ignore = ["F403", "F405"]
 
 [tool.pyright]
 reportArgumentType = false
+extraPaths = ["./python"]

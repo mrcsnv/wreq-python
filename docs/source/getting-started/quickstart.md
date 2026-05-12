@@ -120,7 +120,7 @@ To send HTML form data, use the `data` argument instead:
 
 ```python
 form = {"username": "john", "password": "secret"}
-response = await client.post("https://httpbin.org/post", data=form)
+response = await client.post("https://httpbin.org/post", form=form)
 ```
 
 ---

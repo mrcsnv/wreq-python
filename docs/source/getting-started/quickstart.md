@@ -27,7 +27,7 @@ wreq supports both async and blocking usage. The async client is the default and
 
     client = Client()
     response = client.get("https://httpbin.org/get")
-    print(response.status_code)
+    print(response.status)
     ```
 
 The same interface works for all standard HTTP methods:
@@ -60,7 +60,7 @@ print(response.url)
 
 ```python
 response = await client.get("https://httpbin.org/get")
-print(response.status_code)
+print(response.status)
 # 200
 ```
 
@@ -188,7 +188,7 @@ response = await client.get("https://httpbin.org/status/404")
 try:
     response.raise_for_status()
 except Exception as exc:
-    print(f"Request failed with status {response.status_code}")
+    print(f"Request failed with status {response.status}")
 ```
 
 ---
